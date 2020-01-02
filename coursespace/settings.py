@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'coursespace.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = 'coursespace (aobchey00, V00880355, CS student)'
+USER_AGENT = 'coursespace tester(UVIC CS student)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
