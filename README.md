@@ -1,7 +1,6 @@
-# uvic_autologin
-A spider that login to UVic's website with your NetLinkID and password.
+# uvic_course_archive
+
+A web crawler that downloads all course handouts (pdf,doc,etc.) on CourseSpaces.
 
 ----Work in Progress----
-able to login to uvic.ca and redirect to coursespaces.ca through command line
-
-This is part of modules for scraping marked and returned quizzes from UVic CourseSpaces.
+This spider can only logins through UVIC CourseSpaces, but unable to access individual course or download handouts yet.
