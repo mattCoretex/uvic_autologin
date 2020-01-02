@@ -27,26 +27,33 @@ class LoginSpider(scrapy.Spider):
         # link = response.xpath("//*[@class=' row card-deck']/div[@class='card mb-3 courses-view-course-item']/a/@href").extract()
         # - last 3 for irrelevent links
         link = response.xpath("//*[@class=' row card-deck']/div[@class='card mb-3 courses-view-course-item']/a/@href").extract()
-        yield Request(link[0], callback=self.get_files, dont_filter=True)
-        # print("\n\n\n\n\n\n\n%s\n\n\n\n\n\n" % req.url)
-        # inspect_response(response,self)
+        yield Request(link[0], callback=self.parse_file_list, dont_filter=True)
 
-    def get_files(self, response):
+    def parse_file_list(self, response):
         files = response.xpath("//div[@class='activityinstance']/a/@href").getall()
-        # for f in files:
-        #     if('resource' in f):
-        #         yield Request(url=f, callback=self.download_files, dont_filter=True)
-        yield Request(url=files[1], callback=self.download_files, dont_filter=True)
-        # inspect_response(response,self)
+        for f in files[1:5]:
+            if('resource' in f):
+                yield Request(url=f, callback=self.get_file_link, dont_filter=True)
+        # print("\n\n\n\n\n\n\n%s\n\n\n\n\n\n" % f)
+
+    def get_file_link(self, response):
+        file_link = response.xpath("//div[@class='resourceworkaround']/a/@href").extract()
+        yield Request(url=file_link[0], callback=self.download, dont_filter=True)
 
 
-    def download_files(self, response):
+    def download(self, response):
         path = response.url.split('/')[-1]
-        dirf = os.getcwd()
-        if not os.path.exists(dirf):os.makedirs(dirf)
-        os.chdir(dirf)
+        self.logger.info('Saving PDF %s', path)
         with open(path, 'wb') as f:
             f.write(response.body)
+        # path = response.url.split('/')[-1]
+        # dirf = os.getcwd() + '/course'
+        # if not os.path.exists(dirf):os.makedirs(dirf)
+        # os.chdir(dirf)
+        # with open(path, 'wb') as f:
+        #     f.write(response.body)
+        # inspect_response(response,self)
+
 
 
 
