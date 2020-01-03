@@ -1,4 +1,4 @@
-# uvic_course_archive
+# uvic_course_archiver
 
 ***A web crawler that downloads all course handouts (pdf,doc,etc.) on CourseSpaces.**
 
