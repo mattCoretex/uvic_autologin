@@ -1,6 +1,6 @@
 # uvic_course_archiver
 
-***A web crawler that downloads all course handouts on CourseSpaces.**
+***A web crawler that downloads all course handouts on CourseSpaces.***
 
 ***PROBLEM: Might not be able to download all types of files yet (.pdf is OK so far)
 
@@ -23,3 +23,6 @@ How to use:
 5. Wait for the program to initialize until you're asked to enter your```NetLinkID and password``` in the terminal
 6. Wait til all files are downloaded. **Probably will take a while!!
 7. Folders containing handouts should be generated in ```/coursespace/spiders/login.py```
+
+
+**Remember to Crawl Responsibly and Don't Harm the Website!!**
