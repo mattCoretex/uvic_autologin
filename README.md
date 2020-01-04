@@ -7,10 +7,14 @@
 
 Put each handouts into a folder of its course name.
 
-Require Scrapy to be installed.
+
+Require Scrapy to run.
 ```
 pip install scrapy
 ```
+see https://scrapy.org/
+
+
 
 How to use:
 
