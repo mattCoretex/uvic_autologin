@@ -1,9 +1,8 @@
 # uvic_course_archiver
 
-***A web crawler that downloads all course handouts (pdf,doc,etc.) on CourseSpaces.**
+***A web crawler that downloads all course handouts on CourseSpaces.**
 
-
-***PROBLEM: Files are downloaded into the wrong local folder!
+***PROBLEM: Might not be able to download all files yet.. .pdf is OK so far
 
 Put each handouts into a folder of its course name.
 <br>
