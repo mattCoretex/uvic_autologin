@@ -6,7 +6,7 @@
   a) Might not be able to download all types of files yet (.pdf is OK so far).
   b) Might skip some course or handouts.
 
-Put each handouts into a folder of its course name.
+
 <br>
 <br>
 Require Scrapy to run.
