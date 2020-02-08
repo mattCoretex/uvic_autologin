@@ -27,4 +27,8 @@ How to use:
 7. Folders containing handouts should be generated in ```/coursespace/spiders/login.py```
 
 
-**Remember to Crawl Responsibly and Don't Harm the Website!!**
+
+## Disclaimer:
+
+This scraper should only be used as a learning tool only. 
+It's the responsibility of the user who deploys this scraper to know what you're doing is legal and doesn't harm the website.
