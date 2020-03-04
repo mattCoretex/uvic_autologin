@@ -2,9 +2,9 @@
 
 ***A web crawler that downloads all course handouts on CourseSpaces.***
 
-***PROBLEMs: 
-  a) Might not be able to download all types of files yet (.pdf is OK so far).
-  b) Might skip some course or handouts.
+***PROBLEM: 
+  + Might not be able to download all types of files yet (.pdf is OK so far).
+
 
 
 <br>
