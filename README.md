@@ -22,7 +22,7 @@ How to use:
 2. In the extracted folder, navigate to ```/coursespace/spiders/login.py```
 3. Open the terminal in this directory
 4. Run the program with ```scrapy runspider login.py```
-5. Wait for the program to initialize until you're asked to enter your```NetLinkID and password``` in the terminal
+5. Wait for the program to initialize. Then enter your```NetLinkID and password``` in the terminal
 6. Wait til all files are downloaded. **Probably will take a while!!
 7. Folders containing handouts should be generated in ```/coursespace/spiders/login.py```
 
