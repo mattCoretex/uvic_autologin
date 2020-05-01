@@ -1,6 +1,6 @@
-# uvic_coursespaces_archiver
+# CourseSpaces Scraper
 
-***A web crawler that downloads all course handouts on CourseSpaces.***
+***A web crawler that downloads all course handouts on UVic CourseSpaces.***
 
 ***PROBLEM: 
   + Might not be able to download all types of files yet (.pdf is OK so far).
