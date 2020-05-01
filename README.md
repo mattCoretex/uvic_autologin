@@ -2,8 +2,7 @@
 
 ***A web crawler that downloads all course handouts on UVic CourseSpaces.***
 
-**To do:
-
+**To do:***
  - Download all files other than .pdf
  - Create a user-friendly login GUI.
 
