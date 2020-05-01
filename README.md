@@ -2,8 +2,10 @@
 
 ***A web crawler that downloads all course handouts on UVic CourseSpaces.***
 
-***PROBLEM: 
-  + Might not be able to download all types of files yet (.pdf is OK so far).
+**To do:
+
+ - Download all files other than .pdf
+ - Create a user-friendly login GUI.
 
 
 
@@ -23,7 +25,7 @@ How to use:
 3. Open the terminal in this directory
 4. Run the program with ```scrapy runspider login.py```
 5. Wait for the program to initialize. Then enter your```NetLinkID and password``` in the terminal
-6. Wait til all files are downloaded. **Probably will take a while!!
+6. Wait til all files are downloaded.
 7. Folders containing handouts should be generated in ```/coursespace/spiders/login.py```
 
 
